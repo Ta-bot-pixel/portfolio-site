@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
@@ -29,8 +31,10 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "15.1.1",
+    "gh-pages": "^6.3.0",
     "postcss": "latest",
     "sass": "^1.69.5",
     "tailwindcss": "latest"
-  }
+  },
+  "homepage": "https://tony-james.github.io/portfolio"
 }

@@ -4,7 +4,9 @@ import React from 'react';
 
 const VideoCarousel = ({ videosData }) => {
   const handleWatchNow = (url) => {
-    window.open(url, '_blank'); // Open the video URL in a new tab
+    if (typeof window !== "undefined") {
+      window.open(url, '_blank'); // Open the video URL in a new tab
+    }
   };
 
   return (
